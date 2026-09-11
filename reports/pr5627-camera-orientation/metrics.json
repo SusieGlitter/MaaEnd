@@ -1,0 +1,127 @@
+{
+  "dataset": "D:\\kang\\maaend\\test\\map_direction_samples\\20260905_185001",
+  "model": "D:\\kang\\maaend\\MaaEnd\\assets\\resource\\model\\map\\cameraorientation.onnx",
+  "model_sha256": "e60fd0ef890f7985758f172a671bb47e3b0f93f6c08953c3b643959a646203fe",
+  "samples": 335,
+  "input_contract": {
+    "name": "strip",
+    "type": "tensor(uint8)",
+    "shape": [
+      1,
+      42,
+      360,
+      3
+    ]
+  },
+  "preprocessing": {
+    "center_720p": [
+      108.0,
+      111.0
+    ],
+    "inner_radius_720p": 12.0,
+    "outer_radius_720p": 54.0,
+    "output_shape": [
+      42,
+      360,
+      3
+    ],
+    "color_order": "BGR",
+    "angle_axis": "1 degree per column, north=0, clockwise"
+  },
+  "camera_model_vs_walk_heading": {
+    "count": 335,
+    "signed_mean_deg": -0.7010515336554158,
+    "mae_deg": 1.3478525921265159,
+    "rmse_deg": 1.7135460956559776,
+    "median_abs_deg": 1.1734863598436505,
+    "p90_abs_deg": 2.6834008621171055,
+    "p95_abs_deg": 3.071865650535372,
+    "max_abs_deg": 6.925945587742547,
+    "within_1_deg": 0.44477611940298506,
+    "within_2_deg": 0.7671641791044777,
+    "within_5_deg": 0.9940298507462687,
+    "within_10_deg": 1.0
+  },
+  "existing_end_raw_rot_vs_walk_heading": {
+    "count": 335,
+    "signed_mean_deg": -0.04418748165415134,
+    "mae_deg": 1.260205849168922,
+    "rmse_deg": 1.6969396598393391,
+    "median_abs_deg": 0.9326757033155104,
+    "p90_abs_deg": 2.6012911157438454,
+    "p95_abs_deg": 3.1396352105257854,
+    "max_abs_deg": 7.6362138677078235,
+    "within_1_deg": 0.5194029850746269,
+    "within_2_deg": 0.8029850746268656,
+    "within_5_deg": 0.982089552238806,
+    "within_10_deg": 1.0
+  },
+  "camera_model_vs_existing_end_raw_rot": {
+    "count": 335,
+    "signed_mean_deg": -0.6568640520012639,
+    "mae_deg": 1.9560805369312355,
+    "rmse_deg": 2.5343225274189467,
+    "median_abs_deg": 1.5730835633406741,
+    "p90_abs_deg": 4.19754341362771,
+    "p95_abs_deg": 4.848647379010897,
+    "max_abs_deg": 8.601214055091248,
+    "within_1_deg": 0.34328358208955223,
+    "within_2_deg": 0.6059701492537314,
+    "within_5_deg": 0.9552238805970149,
+    "within_10_deg": 1.0
+  },
+  "model_confidence": {
+    "mean": 0.9971464788631016,
+    "median": 0.9980419162733865,
+    "min": 0.9527683424195602,
+    "max": 0.9984996440085216
+  },
+  "model_error_histogram_deg": [
+    {
+      "lower": 0,
+      "upper": 1,
+      "count": 149
+    },
+    {
+      "lower": 1,
+      "upper": 2,
+      "count": 108
+    },
+    {
+      "lower": 2,
+      "upper": 3,
+      "count": 57
+    },
+    {
+      "lower": 3,
+      "upper": 5,
+      "count": 19
+    },
+    {
+      "lower": 5,
+      "upper": 10,
+      "count": 2
+    },
+    {
+      "lower": 10,
+      "upper": 20,
+      "count": 0
+    },
+    {
+      "lower": 20,
+      "upper": 180,
+      "count": 0
+    }
+  ],
+  "example": {
+    "frame": "sample_00097.png",
+    "heading_deg": 358.13059305477566,
+    "predicted_deg": 356.957106694932,
+    "model_error_deg": -1.1734863598436505,
+    "confidence": 0.9983769509555428,
+    "pmf_center": 357,
+    "end_raw_rot_deg": 358.361372,
+    "end_raw_rot_error_deg": 0.23077894522435827,
+    "distance_px": 14.40766809723209
+  }
+}
